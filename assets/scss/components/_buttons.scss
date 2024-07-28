@@ -1,0 +1,31 @@
+@mixin branded-btn($font-size: 14px, $padding-value: 15px 30px, $icon: true) {
+  text-decoration: none;
+  padding: $padding-value;
+  display: inline-flex;
+  gap: 10px;
+  align-items: center;
+  font-size: $font-size;
+  border-radius: 63px;
+  border: none;
+  font-weight: 500;
+  color: $white;
+  background-color: $primary-color-100;
+
+  @if $icon == true {
+    &:after {
+      content: "";
+      display: block;
+      width: 5px;
+      height: 5px;
+      border-top: 2px solid $white;
+      border-right: 2px solid $white;
+      transform: rotate(45deg);
+      margin-left: auto;
+    }
+  }
+
+}
+
+.branded-btn {
+  @include branded-btn($font-size: 14px);
+}

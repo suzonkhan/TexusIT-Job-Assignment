@@ -1,0 +1,54 @@
+.partners-section {
+  padding: 0 0 106px;
+}
+
+.partners-carousal-nav {
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  gap: 27px;
+
+  button {
+    display: flex;
+    align-items: center;
+    background-color: #fff;
+    border: none;
+    outline: none;
+    flex: 0 0 25px;
+    max-width: 25px;
+    height: 25px;
+    padding: 0;
+    cursor: pointer;
+  }
+}
+
+.partners-carousal-wrapper {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  align-items: center;
+  gap: 15px;
+  padding: 30px 0;
+  @media screen and (min-width: 1260px) {
+    grid-template-columns: repeat(5, 254px);
+  }
+
+  .carousal-partner {
+    display: flex;
+    align-items: center;
+    gap: 11px;
+
+    & > div {
+      &:first-child {
+        flex: 0 0 44px;
+        max-width: 44px;
+      }
+    }
+
+    h6 {
+      font-size: 15px;
+      line-height: 20px;
+      font-weight: 500;
+      color: #A1A1B1;
+    }
+  }
+}

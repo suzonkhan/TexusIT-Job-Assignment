@@ -1,0 +1,151 @@
+.main-footer {
+  background-color: #F8F9FE;
+  padding-top: 93px;
+}
+
+.footer-widget-wrapper {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 15px;
+  @media screen and (min-width: 1260px) {
+    grid-template-columns: 227px 384px 329px 267px;
+  }
+}
+
+.footer-widget {
+  .widget-title {
+    font-size: 16px;
+    margin: 0 0 26px;
+  }
+}
+
+.footer-logo {
+  margin-top: 6px;
+}
+
+.footer-social-media {
+  margin-top: 46px;
+
+  ul {
+    margin: 0;
+    padding: 0;
+
+    li {
+      list-style: none;
+      display: inline-block;
+      margin-right: 9px;
+
+      a {
+        display: block;
+        width: 18px;
+        height: 18px;
+
+        svg {
+          width: 100%;
+          height: 100%;
+        }
+      }
+
+      &.youtube {
+        margin-left: 8px;
+
+        a {
+          width: 20px;
+          height: 20px;
+        }
+      }
+    }
+  }
+}
+
+.footer-contact-info {
+  display: grid;
+  grid-template-columns: 25px auto;
+  gap: 6px;
+  margin-bottom: 17px;
+  align-items: end;
+
+  p {
+    margin: 0;
+    font-size: 15px;
+
+    strong {
+      display: block;
+    }
+
+    &.info-label {
+      font-size: 12px;
+    }
+
+    &.info-lead {
+      font-size: 16px;
+      font-weight: 500;
+      line-height: 22px;
+    }
+  }
+
+  &.footer-address {
+    margin-bottom: 10px;
+    align-items: center;
+    margin-top: 8px;
+  }
+
+  &.company-code-info {
+    margin-bottom: 20px;
+  }
+
+  &.ticket-office-info {
+    margin-bottom: 13px;
+  }
+
+  &.director-info {
+    margin-bottom: 13px;
+  }
+}
+
+.footer-menu {
+  margin: 0;
+  padding: 2px 0 0 0;
+
+  li {
+    list-style: none;
+
+    a {
+      font-size: 15px;
+      padding: 5px 0;
+      display: flex;
+      gap: 8px;
+      text-decoration: none;
+      color: #14133B;
+
+      &:before {
+        content: "";
+        display: block;
+        background: url('data:image/svg+xml,<svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M4.89104 12.2894L11.2126 5.96777L11.1826 11.1989L12.2929 11.1923L12.3296 4.63603L12.3203 4.09385L11.7781 4.08455L5.22182 4.12127L5.21561 5.23045L10.4456 5.20076L4.12403 11.5223L4.89104 12.2894Z" fill="%232E3192"/></svg>') no-repeat center;
+        width: 13px;
+        height: 17px;
+      }
+    }
+  }
+}
+
+.evaluate-btn {
+  margin-top: 24px;
+}
+
+.footer-copyright {
+  padding: 28px 0;
+  display: flex;
+  align-items: center;
+  gap: 45px;
+
+  p {
+    font-size: 12px;
+    color: rgba(20, 19, 59, 0.34);
+  }
+
+  a {
+    color: inherit;
+    text-decoration: none;
+  }
+}

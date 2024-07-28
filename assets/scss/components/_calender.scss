@@ -1,0 +1,79 @@
+.calender-wrapper {
+  background-color: #fff;
+  border-radius: 10px;
+  border: 1px solid #AAB3DB;
+  font-family: "Albert Sans", sans-serif;
+
+  .calender-header {
+    padding: 25px;
+    background-color: #2E3192;
+    display: flex;
+    justify-content: space-between;
+    color: $white;
+    border-radius: 10px;
+
+    h4 {
+      margin: 0 0 11px 0;
+      font-weight: 500;
+      font-size: 22px;
+      line-height: 20px;
+    }
+
+    p {
+      margin: 0;
+      font-size: 18px;
+    }
+
+    button {
+      background: transparent;
+      border: none;
+      cursor: pointer;
+      padding: 0 2.5px;
+    }
+  }
+
+  .calender-body {
+    padding: 40px 20px;
+    display: grid;
+    grid-template-columns: repeat(7, 30px);
+    gap: 25px 15px;
+    justify-content: space-evenly;
+
+    & > div {
+      height: 30px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #ACACAC;
+
+
+      &.day {
+        color: #14133B;
+      }
+
+      &.date {
+        border-radius: 100%;
+      }
+
+      &.today {
+        & ~ div.date {
+          color: #14133B;
+          cursor: pointer;
+
+          &:hover {
+            background-color: #f3f3f3;
+          }
+
+          &.selected-date {
+            background-color: #2E3192;
+            color: #fff;
+          }
+
+
+        }
+      }
+
+
+    }
+  }
+}
