@@ -1,18 +1,16 @@
-.news-carousel-wrapper {
+.news-wrapper {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  gap: 15px;
+  grid-template-columns: repeat(3, minmax(200px, 1fr));
+  gap: 25px 15px;
+}
+.news-item {
+  border-radius: 10px;
+  overflow: hidden;
+  position: relative;
 
-  .news-item {
-    border-radius: 10px;
-    overflow: hidden;
-    position: relative;
-
-    img {
-      display: block;
-    }
+  img {
+    display: block;
   }
-
   .news-info {
     position: absolute;
     bottom: 20px;
@@ -23,7 +21,7 @@
     border-radius: 10px;
     display: flex;
     align-items: center;
-    gap: 35px;
+    gap: 50px;
 
     h3 {
       margin: 0;

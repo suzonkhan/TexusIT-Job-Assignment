@@ -1,0 +1,41 @@
+.page-title {
+  background-color: #F8F9FE;
+  position: relative;
+  padding: 32px 0;
+
+  h1 {
+    margin: 0;
+    font-size: 35px;
+    font-weight: 500;
+    line-height: 52px;
+  }
+}
+
+ul.breadcrumb {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  font-size: 12px;
+  line-height: 1;
+
+  li {
+    list-style: none;
+    display: inline-block;
+    border-right: 1px solid rgba(20, 19, 59, 0.50);
+    padding: 0 6px;
+
+    a {
+      text-decoration: none;
+      color: inherit;
+    }
+
+    &:first-child {
+      padding-left: 0;
+    }
+
+    &:last-child {
+      border-right: none;
+    }
+  }
+}

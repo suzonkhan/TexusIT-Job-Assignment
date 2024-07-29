@@ -3,14 +3,13 @@
 @import "basic";
 @import "grid";
 
-
 @import "components/buttons";
 @import "components/header";
-@import "components/sliders";
 @import "components/page-section";
-@import "components/news-carousel";
-
-@import "components/events-section";
-@import "components/about-us-section";
-@import "components/partners-carousel";
+@import "components/calender";
 @import "components/footer";
+@import "components/page-title";
+
+//Pages
+@import "pages/home-page/home-page";
+@import "pages/about-us/about-us";

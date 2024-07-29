@@ -1,0 +1,26 @@
+.accordion-wrapper {
+  line-height: 25px;
+
+  .accordion-item {
+    margin-bottom: 15px;
+    &.accordion-item-active {
+      .accordion-body {
+        display: block;
+      }
+    }
+  }
+
+  .accordion-title {
+    padding: 9px 20px;
+    font-weight: 500;
+    border: 0.6px solid #AAB3DB;
+    border-radius: 10px;
+  }
+
+  .accordion-body {
+    padding: 25px 20px 20px;
+    display: none;
+  }
+
+
+}
